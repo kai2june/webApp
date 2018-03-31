@@ -1,0 +1,39 @@
+{
+  "name": "webapp",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "kai2june"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4",
+    "bootstrap": "3.3.5",
+    "font-awesome": "4.4.0"
+  },
+    "overrides": {
+        "bootstrap": {
+            "main": [
+                "less/bootstrap.less",
+                "dist/css/bootstrap.css",
+                "dist/js/bootstrap.js"
+            ]
+        },
+        "font-awesome": {
+            "main": [
+                "less/font-awesome.less",
+                "css/font-awesome.min.css",
+                "scss/font-awesome.scss"
+            ]
+        }
+    }
+}
