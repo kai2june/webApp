@@ -7,7 +7,13 @@ var session = require('express-session');
 var app = express();
 
 var port = process.env.PORT || 5000;
-var nav = [{Link: '/Books', Text: 'Book'}, {Link: '/Authors', Text: 'Author'}];
+var nav = [{
+    Link: '/Books',
+    Text: 'Book'
+}, {
+    Link: '/Authors',
+    Text: 'Author'
+}];
 var bookRouter = require('./src/routes/bookRoutes')(nav);
 var adminRouter = require('./src/routes/adminRoutes')(nav);
 var authRouter = require('./src/routes/authRoutes')(nav);
